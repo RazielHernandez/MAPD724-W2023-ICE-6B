@@ -23,11 +23,17 @@
                                 <rect key="frame" x="16" y="751" width="361" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Pick from library"/>
+                                <connections>
+                                    <action selector="SelectExistingPicture_Pressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="muF-N3-jeo"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rna-zo-JBV">
                                 <rect key="frame" x="16" y="693" width="361" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="New photo or video"/>
+                                <connections>
+                                    <action selector="takePictureOrVideo_Pressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="buK-T9-I17"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -45,6 +51,10 @@
                             <constraint firstItem="NoV-Hs-lMU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="xJO-mr-U0E"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="imageView" destination="NoV-Hs-lMU" id="MFZ-YQ-UiB"/>
+                        <outlet property="takePictureButton" destination="Rna-zo-JBV" id="s74-yK-0RK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
